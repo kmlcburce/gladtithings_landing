@@ -8,7 +8,7 @@ export class Content extends Component {
 		return (
 			<div>
 				<img src={require('../assets/LogoLeft.png')} className="image"></img>
-				<div>
+				<div style={{marginTop: '22%'}}>
 					<img src={require('../assets/saints.png')} className="image"></img>
 				</div>
 			</div>
@@ -24,7 +24,7 @@ export class Content extends Component {
   render() {
     return (
       <div>
-          <section style={{display: 'flex', justifyContent: 'space-between'}}>
+          <section className='contentContainer' style={{justifyContent: 'space-between'}}>
 							<div className='leftContent'>
 								{this.renderLeft()}
 							</div>
