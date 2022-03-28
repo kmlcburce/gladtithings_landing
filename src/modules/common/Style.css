@@ -1,4 +1,6 @@
-
+.contentCotainer{
+    display: flex;
+}
 .roundedBtn{
     background: linear-gradient(to right, #56c596, #4dc994, #43ce91, #38d28e, #2bd68a, #3cda88, #49de85, #56e283, #72e783, #8aec84, #9ff185, #b3f688);
     padding: 10px !important;
