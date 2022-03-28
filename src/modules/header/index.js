@@ -5,8 +5,17 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
 import '../common/Style.css'
+import DonateModal from '../content/donateModal';
 
-function Header() {
+const Header = () =>{
+  const modalRef = React.useRef();
+  const handleClick = () => {
+      console.log(modalRef);
+  }
+  React.useEffect(() => {
+      console.log('=====', modalRef);
+    // modalRef.current = 
+  }, [])
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" className='header' elevation={0}>
@@ -17,10 +26,11 @@ function Header() {
           <section>
             <Button className='nav'>About</Button>
             <Button className='nav'>Contact</Button>
-            <Button className='roundedBtn' color='inherit'>Donate</Button>
+            <Button className='roundedBtn' color='inherit' onClick={handleClick}>Donate</Button>
           </section>
         </Toolbar>
       </AppBar>
+      <DonateModal ref={modalRef}/>
     </Box>
   );
 }
