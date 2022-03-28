@@ -30,3 +30,25 @@
     width: 8%;
     height: auto;
 }
+
+.leftContent{
+    width: 40%;
+    align-items: center;
+}
+.rightContent{
+    width: 60%;
+    align-items: center;
+}
+.image{
+    width: 90%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .leftContent, .rightContent{
+        width: 100% !important;
+    }
+    .image{
+        width: 100%;
+    }
+}
