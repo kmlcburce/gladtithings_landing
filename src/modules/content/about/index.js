@@ -70,4 +70,4 @@ export class About extends Component {
   }
 }
 
-export default Content
+export default About

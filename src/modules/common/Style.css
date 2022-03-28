@@ -13,6 +13,18 @@
     background-color: transparent !important;
 }
 
+.text-primary{
+    color: #0FDB84 !important;
+}
+
+.menuRight-web{
+    display: block;
+}
+
+.menuRight-mobile{
+    display: none;
+}
+
 .nav.active{
     color: black !important;
     
@@ -44,7 +56,41 @@
     height: auto;
 }
 
+.donateModal{
+    overflow: scroll;
+}
+
+.modalContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border-radius: 2%;
+    padding: 3% !important;
+}
+
+.image-sm{
+    width: 20% !important;
+    height: auto;
+}
+
 @media (max-width: 991px) {
+    .menuRight-web{
+        display: none;
+    }
+    
+    .menuRight-mobile{
+        display: block;
+    }
+    .navImg{
+        width: 20%;
+        height: auto;
+    }
+
     .leftContent, .rightContent{
         width: 100% !important;
     }
@@ -54,5 +100,13 @@
     .contentContainer{
         padding-left: 2% !important;
         padding-right: 2%;
+    }
+    .image-sm{
+        width: 60% !important;
+        height: auto;
+    }
+    .modalContent{
+        width: 80% !important;
+        margin-bottom: 10%;
     }
 }

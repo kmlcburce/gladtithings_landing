@@ -2,7 +2,7 @@ import { Grid } from '@mui/material'
 import React, { Component } from 'react'
 import bgRight from '../assets/bgRight.png'
 import '../common/Style.css'
-export class Content extends Component {
+class Content extends Component {
 
   renderLeft(){
 		return (
