@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React, { Component } from 'react'
-import bgLeft from '../assets/bgLeft.png'
-export class Content extends Component {
+import bgLeft from '../../assets/bgLeft.png'
+export class About extends Component {
 
   renderLeft(){
 		return (
@@ -10,7 +10,7 @@ export class Content extends Component {
                     width: '90%',
                     paddingTop: '40%',
                     paddingLeft: '30%'
-                }} src={require('../assets/LogoNoDove.png')}></img>
+                }} src={require('../../assets/LogoNoDove.png')}></img>
 				
 			</div>
 		)
@@ -31,7 +31,7 @@ export class Content extends Component {
                     width: '10%',
                     marginLeft: '3%',
                     paddingBottom: '3%'
-                }} src={require('../assets/bird-green.png')}></img>
+                }} src={require('../../assets/bird-green.png')}></img>
             <div style={{
                 fontSize: '18px',
                 fontStyle: 'italic'
