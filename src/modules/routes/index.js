@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Content from '../content/index.js'
-import About from '../about/index.js'
+import About from '../content/about/index.js'
 function RoutesList(){
     return (
         <Routes>
