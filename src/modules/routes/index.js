@@ -5,7 +5,7 @@ import Contact from '../content/contact/index.js'
 function RoutesList(){
     return (
         <Routes>
-            <Route path="/" element={<Content/>}></Route>
+            {/* <Route path="/" element={<Content/>}></Route> */}
             <Route path="/about" element={<About/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
