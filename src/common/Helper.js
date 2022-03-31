@@ -10,6 +10,16 @@ export default{
         type: 'internal',
         style: null
     }, {
+        title: 'Contact',
+        route: '/contact-us',
+        type: 'internal',
+        style: null
+    }, {
+        title: 'Donate',
+        route: '/donate',
+        type: 'internal',
+        style: null
+    }, {
         title: 'Register',
         type: 'external',
         route: 'signup',
