@@ -8,6 +8,8 @@ import Button from '@mui/material/Button';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import DonateModal from 'modules/donateModal';
 import { IconButton, Menu, MenuItem } from '@mui/material';
+import Helper from 'common/Helper';
+import { withRouter } from 'react-router-dom';
 
 class Header extends React.Component{
 	constructor(props){
@@ -51,9 +53,11 @@ class Header extends React.Component{
 						this.setState({anchorEl: null, open: false})
 					}}
 				>
-					<MenuItem>About</MenuItem>
-					<MenuItem>Contact</MenuItem>
-					<MenuItem>Donate</MenuItem>
+					{
+						Helper.headerMenu.map((item) => (
+							<MenuItem>{item.title}</MenuItem>
+						))
+					}
 				</Menu>
 			</div>
 		)
@@ -67,12 +71,25 @@ class Header extends React.Component{
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
 						<section className='menuRight-web'>
-							<Button className='nav' onClick={()=>{
-							// this.props.history.push('/about')
-							console.log('props', this.props)
-						}}>About</Button>
-							<Button className='nav' onClick={()=>{this.props.history.push('/contact')}}>Contact</Button>
-							<Button className='roundedBtn' color='inherit' onClick={() => this.handleClick()}>Donate</Button>
+							{
+								Helper.headerMenu.map((item) => (
+									<Button
+										className='nav'
+										onClick={() => {
+											if(item.type == 'internal'){
+												this.props.history.push(item.route)
+											}else{
+												window.location.href = Helper.app_route + item.route
+											}
+										}}
+										style={{
+											fontWeight: 'bold',
+											textTransform: 'capitalize',
+											...item.style
+										}}
+									>{item.title}</Button>
+								))
+							}
 						</section>
 						<section className='menuRight-mobile'>
 							{this.displayMenuBar()}
@@ -85,4 +102,4 @@ class Header extends React.Component{
 	}
 }
 
-export default Header
+export default withRouter(Header)

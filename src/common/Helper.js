@@ -2,7 +2,7 @@ import Colors from "./Colors";
 
 export default{
     name: 'Good Terms',
-    app_route: 'https://sandbox.goodterms.ai/',
+    app_route: 'https://app.gladtithings.com/',
     copyright: 'Copyright © 2022 Good Terms LLC.',
     headerMenu: [{
         title: 'About',
