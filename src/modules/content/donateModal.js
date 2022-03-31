@@ -20,9 +20,9 @@ class DonateModal extends React.Component{
 	renderDownloadApp(){
 		return (
 			<div>
-				<img src={require('../assets/playstoreblack.png')} className="image-sm"></img>
-				<img src={require('../assets/appstoreblack.png')} className="image-sm"></img>
-				<img src={require('../assets/appgallery.png')} className="image-sm"></img>
+				<img src={require('assets/playstoreblack.png')} className="image-sm"></img>
+				<img src={require('assets/appstoreblack.png')} className="image-sm"></img>
+				<img src={require('assets/appgallery.png')} className="image-sm"></img>
 			</div>
 		)
 	}

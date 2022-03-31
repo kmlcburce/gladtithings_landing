@@ -1,15 +1,16 @@
 import { Grid } from '@mui/material'
 import React, { Component } from 'react'
-import bgRight from '../assets/bgRight.png'
+import bgRight from 'assets/bgRight.png'
 import '../common/Style.css'
+
 class Content extends Component {
 
   renderLeft(){
 		return (
 			<div>
-				<img src={require('../assets/LogoLeft.png')} className="image"></img>
+				<img src={require('assets/LogoLeft.png')} className="image"></img>
 				<div style={{marginTop: '22%'}}>
-					<img src={require('../assets/saints.png')} className="image"></img>
+					<img src={require('assets/saints.png')} className="image"></img>
 				</div>
 			</div>
 		)
@@ -17,7 +18,7 @@ class Content extends Component {
 	renderRight(){
 		return(
 			<div>
-				<img src={require('../assets/clouds.png')} className="image"></img>
+				<img src={require('assets/clouds.png')} className="image"></img>
 			</div>
 		)
 	}
