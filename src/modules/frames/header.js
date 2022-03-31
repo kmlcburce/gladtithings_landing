@@ -69,11 +69,10 @@ class Header extends React.Component{
 					<Toolbar>
 						<img
 							src={require('assets/logo.png')}
-							className="navImg"
+							className="navImg cursor-hover"
 							onClick={() => {
 								this.props.history.push('/')
 							}}
-							className="cursor-hover"
 							/>
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
