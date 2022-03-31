@@ -90,6 +90,10 @@
 .bold{
     font-weight: bold;
 }
+
+.cursor-hover:hover{
+    cursor: pointer !important;
+}
 @media (max-width: 991px) {
     .menuRight-web{
         display: none;
