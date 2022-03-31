@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material'
 import React, { Component } from 'react'
 import bgRight from 'assets/bgRight.png'
-import 'common/Style.css'
 
 class Content extends Component {
 

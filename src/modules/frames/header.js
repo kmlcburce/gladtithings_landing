@@ -63,7 +63,7 @@ class Header extends React.Component{
 			<Box sx={{ flexGrow: 1 }}>
 				<AppBar position="static" className='header' elevation={0}>
 					<Toolbar>
-						<img src={require('../assets/logo.png')} className="navImg"></img>
+						<img src={require('assets/logo.png')} className="navImg"></img>
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
 						<section className='menuRight-web'>

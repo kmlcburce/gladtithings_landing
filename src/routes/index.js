@@ -1,14 +1,14 @@
 import { Switch} from "react-router-dom";
-import Content from '../content/index.js'
-import About from '../content/about/index.js'
-import Contact from '../content/contact/index.js'
+import Content from 'modules/index.js'
+import About from 'modules/about/index.js'
+import Contact from 'modules/contact/index.js'
 import Route from './route'
 function RoutesList(){
     return (
         <Switch>
-            <Route path="/" exact component={Content}></Route>
-            <Route path="/about"exact component={About}></Route>
-            <Route path="/contact" exact component={Contact}></Route>
+            <Route path="/" exact component={Content} />
+            <Route path="/about"exact component={About} />
+            <Route path="/contact" exact component={Contact} />
         </Switch>
     )
 }

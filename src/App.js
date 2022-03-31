@@ -1,5 +1,5 @@
 import Header from 'modules/frames/header'
-import RoutesList from 'modules/routes'
+import RoutesList from 'routes'
 
 function App() {
   return (
