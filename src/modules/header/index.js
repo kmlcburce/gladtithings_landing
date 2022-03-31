@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Route } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -67,8 +68,11 @@ class Header extends React.Component{
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
 						<section className='menuRight-web'>
-							<Button className='nav'>About</Button>
-							<Button className='nav'>Contact</Button>
+							<Button className='nav' onClick={()=>{
+							// this.props.history.push('/about')
+							console.log('props', this.props)
+						}}>About</Button>
+							<Button className='nav' onClick={()=>{this.props.history.push('/contact')}}>Contact</Button>
 							<Button className='roundedBtn' color='inherit' onClick={() => this.handleClick()}>Donate</Button>
 						</section>
 						<section className='menuRight-mobile'>
