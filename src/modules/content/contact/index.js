@@ -48,7 +48,9 @@ export class Contact extends Component {
             <p className='bold'>Subject/Title</p>
             <input className='inputField' type='text' placeholder='Tell us what the message is about'></input>
             <p className='bold'>Message</p>
-            <textarea rows="15" cols="50" className='messageField' placeholder='Message'></textarea>
+            <textarea style={{
+              border: '1px solid lightgray'
+            }} rows="15" cols="50" className='messageField' placeholder='Message'></textarea>
           </Container>
           </Grid>
           <Grid item sx={8} style={{display: "flex", justifyContent: 'center', marginTop: '20px'}}>
