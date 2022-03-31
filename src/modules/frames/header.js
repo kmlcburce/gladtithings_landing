@@ -5,9 +5,8 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
-import '../common/Style.css'
 import { Menu as MenuIcon } from '@mui/icons-material';
-import DonateModal from '../content/donateModal';
+import DonateModal from 'modules/donateModal';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 
 class Header extends React.Component{

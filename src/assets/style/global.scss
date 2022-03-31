@@ -1,1 +1,125 @@
-@import '~assets/style/Color.scss'
+@import '~assets/style/Color.scss';
+
+.roundedBtn{
+    background: linear-gradient(to right, #56c596, #4dc994, #43ce91, #38d28e, #2bd68a, #3cda88, #49de85, #56e283, #72e783, #8aec84, #9ff185, #b3f688);
+    padding: 10px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    width: 124px;
+}
+
+.header{
+    background-color: transparent !important;
+}
+
+.text-primary{
+    color: #0FDB84 !important;
+}
+
+.menuRight-web{
+    display: block;
+}
+
+.menuRight-mobile{
+    display: none;
+}
+
+.nav.active{
+    color: black !important;
+    
+}
+
+.nav{
+    color: #0FDB84 !important;
+    margin-left: 2 0px !important;
+    margin-right: 20px !important;
+}
+
+.navImg{
+    width: 8%;
+    height: auto;
+}
+
+.leftContent{
+    width: 40%;
+    align-items: center;
+    float: left;
+}
+.rightContent{
+    width: 60%;
+    align-items: center;
+    float: left;
+}
+.image{
+    width: 90%;
+    height: auto;
+}
+
+.donateModal{
+    overflow: scroll;
+}
+
+.modalContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border-radius: 2%;
+    padding: 3% !important;
+}
+
+.image-sm{
+    width: 20% !important;
+    height: auto;
+}
+.inputField{
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.messageField{
+    width: 100%;
+    height: '300px';
+}
+.bold{
+    font-weight: bold;
+}
+@media (max-width: 991px) {
+    .menuRight-web{
+        display: none;
+    }
+    
+    .menuRight-mobile{
+        display: block;
+    }
+    .navImg{
+        width: 20%;
+        height: auto;
+    }
+
+    .leftContent, .rightContent{
+        width: 100% !important;
+    }
+    .image{
+        width: 100%;
+    }
+    .contentContainer{
+        padding-left: 2% !important;
+        padding-right: 2%;
+    }
+    .image-sm{
+        width: 60% !important;
+        height: auto;
+    }
+    .modalContent{
+        width: 80% !important;
+        margin-bottom: 10%;
+    }
+}
