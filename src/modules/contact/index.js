@@ -68,18 +68,6 @@ export class Contact extends Component {
 			</div>
 		)
 	}
-  left(){
-    <div>
-            <p>Name</p>
-            <input  type='text' placeholder='What is your name?'></input>
-            <p>Address</p>
-            <input  type='text' placeholder='What is your name?'></input>
-            <p>Email Address</p>
-            <input  type='text' placeholder='What is your name?'></input>
-            <p>Phone Number</p>
-            <input  type='text' placeholder='What is your name?'></input>
-    </div>
-  }
   render() {
     return (
       <div>
@@ -88,7 +76,7 @@ export class Contact extends Component {
 								backgroundImage: `url(${bgLeft})`,
 								backgroundSize: 'cover',
 								height:'100vh',
-                                backgroundRepeat: 'no-repeat',
+                backgroundRepeat: 'no-repeat',
 							}}>
                 {this.renderLeft()}
             </Grid>
