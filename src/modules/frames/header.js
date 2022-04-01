@@ -77,6 +77,14 @@ class Header extends React.Component{
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
 						<section className='menuRight-web'>
+<<<<<<< HEAD:src/modules/header/index.js
+							<Button to='/about' className='nav' onClick={()=>{
+							// this.props.history.push('/about')
+							console.log('props', this.props)
+						}}>About</Button>
+							<Button className='nav' onClick={()=>{this.props.history.push('/contact')}}>Contact</Button>
+							<Button className='roundedBtn' color='inherit' onClick={() => this.handleClick()}>Donate</Button>
+=======
 							{
 								Helper.headerMenu.map((item) => (
 									<Button
@@ -96,6 +104,7 @@ class Header extends React.Component{
 									>{item.title}</Button>
 								))
 							}
+>>>>>>> b20ed516e31e8233095657925659c3e0a6b01c36:src/modules/frames/header.js
 						</section>
 						<section className='menuRight-mobile'>
 							{this.displayMenuBar()}
