@@ -68,7 +68,7 @@ class Header extends React.Component{
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						</Typography>
 						<section className='menuRight-web'>
-							<Button className='nav' onClick={()=>{
+							<Button to='/about' className='nav' onClick={()=>{
 							// this.props.history.push('/about')
 							console.log('props', this.props)
 						}}>About</Button>
