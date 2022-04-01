@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { AccessAlarm, ThreeDRotation, Cancel } from '@mui/icons-material';
-import '../common/Style.css'
 
 class DonateModal extends React.Component{
 	constructor(props){
@@ -20,9 +19,9 @@ class DonateModal extends React.Component{
 	renderDownloadApp(){
 		return (
 			<div>
-				<img src={require('../assets/playstoreblack.png')} className="image-sm"></img>
-				<img src={require('../assets/appstoreblack.png')} className="image-sm"></img>
-				<img src={require('../assets/appgallery.png')} className="image-sm"></img>
+				<img src={require('assets/playstoreblack.png')} className="image-sm"></img>
+				<img src={require('assets/appstoreblack.png')} className="image-sm"></img>
+				<img src={require('assets/appgallery.png')} className="image-sm"></img>
 			</div>
 		)
 	}

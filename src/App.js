@@ -1,8 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './modules/header/index.js'
-import Content from './modules/content/index.js'
-import RoutesList from './modules/routes/index.js'
+import Header from 'modules/frames/header'
+import RoutesList from 'routes'
 
 function App() {
   return (

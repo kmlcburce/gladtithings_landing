@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material'
 import React, { Component } from 'react'
-import bgLeft from '../../assets/bgLeft.png'
+import bgLeft from 'assets/bgLeft.png'
 export class About extends Component {
 
   renderLeft(){

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Form } from "react-bootstrap";
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
-import bgLeft from '../../assets/bgLeft.png'
+import bgLeft from 'assets/bgLeft.png'
 export class Contact extends Component {
 
   renderLeft(){
