@@ -65,7 +65,7 @@ class Header extends React.Component{
 	render(){
 		return (
 			<Box sx={{ flexGrow: 1 }}>
-				<AppBar position="static" className='header' elevation={0}>
+				<AppBar position="fixed" className='header' elevation={0}>
 					<Toolbar>
 						<img
 							src={require('assets/logo.png')}
@@ -83,7 +83,11 @@ class Header extends React.Component{
 										className='nav'
 										onClick={() => {
 											if(item.type == 'internal'){
-												this.props.history.push(item.route)
+												if(item.route == '/donate'){
+													this.handleClick()
+												}else{
+													this.props.history.push(item.route)
+												}
 											}else{
 												window.location.href = Helper.app_route + item.route
 											}
